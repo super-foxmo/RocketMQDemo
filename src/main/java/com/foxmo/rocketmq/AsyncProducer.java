@@ -28,7 +28,7 @@ public class AsyncProducer {
                 //异步发送。指定回调
                 producer.send(message, new SendCallback() {
                     //当producer接收到MQ发送类的ACK后就会触发该回调方法的执行
-                    @Override
+                     @Override
                     public void onSuccess(SendResult sendResult) {
                         System.out.println(sendResult);
                     }
